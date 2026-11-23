@@ -19,12 +19,14 @@ TextSummarizerApp/
 The dataset CSVs and the fine-tuned weights (~1 GB) are **not** in this repo because of GitHub's file size
 limit.
 
-1. **Data** – download SAMSum (`samsum-train.csv`, `samsum-validation.csv`, `samsum-test.csv`) from the link
-   above and place the files next to the notebook.
-2. **Model** – run `text_summarizer.ipynb` to fine-tune and save the model to `saved_summary_model/`, then
-   copy that folder into `TextSummarizerApp/`.
+1. **Data** – download SAMSum as `samsum-train.csv` and `samsum-validation.csv` from the link above and
+   place them next to the notebook (in the repo root).
+2. **Model** – run `text_summarizer.ipynb` to fine-tune and save the model to `saved_summary_model/` in the
+   repo root. The app loads it from there (`../saved_summary_model`), so no copying is needed.
 
 ## Run the app
+
+Start the app from inside `TextSummarizerApp/` (the model path is relative to it):
 
 ```bash
 cd TextSummarizerApp
