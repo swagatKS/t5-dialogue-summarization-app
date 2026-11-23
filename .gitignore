@@ -1,0 +1,14 @@
+# Large model weights (> 100 MB, rejected by GitHub)
+saved_summary_model/
+**/saved_summary_model/
+*.safetensors
+
+# Dataset (download separately, see README)
+*.csv
+
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.idea/
+.vscode/
